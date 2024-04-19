@@ -45,11 +45,11 @@ for idx, filename in enumerate(os.listdir(folder_path)):
         total_test += 1
         
 print(f"Bench mark for chess board with {piece_nums} piece:")
-print(f"└ BFS: {(total_naive / total_test * 100):.4f} seconds avg per testcase.")
-print(f"└ BestFS:  {(total_fast / total_test * 100):.4f} seconds avg per testcase.") 
-if total_performance / piece_nums > 0:
-    print(f"└ \033[92m {(total_performance / piece_nums * 100):.4f}% \033[00m boost avg.")
+print(f"└ BFS: {(total_naive / total_test):.4f} seconds avg per testcase.")
+print(f"└ BestFS:  {(total_fast / total_test):.4f} seconds avg per testcase.") 
+if total_performance / total_test > 0:
+    print(f"└ \033[92m {(total_performance / total_test * 100):.4f}% \033[00m boost avg.")
 
-if total_performance / piece_nums < 0:
-    print(f"└ \033[91m {(total_performance / piece_nums * 100):.4f}% \033[00m slowed down avg.")
+if total_performance / total_test < 0:
+    print(f"└ \033[91m {(total_performance / total_test * 100):.4f}% \033[00m slowed down avg.")
                 
