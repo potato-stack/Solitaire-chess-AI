@@ -4,7 +4,7 @@ class ChessboardReader:
         rows = input_text.strip().split('\n')
         for row in rows:
             piece, col, row = row.split()
-            chessboard[(ord(col) - ord('a') + 1),int(row)] = piece
+            chessboard[(ord(col) - ord('a') + 1), int(row)] = piece
         return chessboard
 
     def read_chessboard_from_file(self, file_path):

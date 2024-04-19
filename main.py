@@ -10,7 +10,7 @@ if len(sys.argv) < 2:
 
 # Extract the board size from the command-line argument
 piece_nums = int(sys.argv[1])
-ver_bose = True if len(sys.argv) >= 3 and sys.argv[2] == True else False
+ver_bose = True if len(sys.argv) >= 3 and bool(sys.argv[2]) == True else False
 folder_path = f"C:/Users/hatru/OneDrive/Desktop/NMTTNT/Input/{piece_nums}"
 total_performance = 0
 total_naive = 0
@@ -25,6 +25,7 @@ for idx, filename in enumerate(os.listdir(folder_path)):
         reader = ChessboardReader()
         
         initialState = reader.read_chessboard_from_file(file_path)
+        # print(initialState)
         naive_time, naive_gen = solitaire_naive.solve(initialState, verbose=ver_bose)
         fast_time, fast_gen = solitaire_best.solve(initialState, verbose=ver_bose)
         performance = naive_time/fast_time -1 

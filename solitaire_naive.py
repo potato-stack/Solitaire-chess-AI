@@ -40,7 +40,7 @@ def solve(initialState, verbose = False):
     end = perf_counter()
     if verbose == True: 
         moves = []
-
+        moves.append(current_state.moves)
         while current_state is not None:
             parent_state = current_state.parent
             if parent_state is not None:

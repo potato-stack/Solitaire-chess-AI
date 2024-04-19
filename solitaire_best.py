@@ -32,14 +32,14 @@ def solve(initialState, verbose = False):
                     next_state.add(other_chess, current_state.board[chess])
                     next_state.moves = ((chess[0], chess[1]), (other_chess[0], other_chess[1]))
                     next_state.parent = current_state
-
+            
                     heapq.heappush(board_queue_state, next_state)
 
 
     end = perf_counter()
     if verbose == True: 
         moves = []
-
+        moves.append(current_state.moves)
         while current_state is not None:
             parent_state = current_state.parent
             if parent_state is not None:
