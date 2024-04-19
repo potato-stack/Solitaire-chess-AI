@@ -1,0 +1,8 @@
+pawn c 3 
+bishop c 4
+knight c 6
+rook d 5
+king d 6
+pawn e 4
+knight f 3
+bishop f 6

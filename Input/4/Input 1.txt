@@ -1,0 +1,4 @@
+knight e 6
+queen d 4
+bishop e 3
+pawn f 3

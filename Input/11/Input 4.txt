@@ -1,0 +1,11 @@
+queen b 2
+rook b 3
+pawn b 4
+pawn c 3
+knight c 6
+bishop d 7
+rook e 2
+pawn f 5
+bishop f 7
+knight g 5
+knight g 6

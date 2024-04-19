@@ -1,0 +1,4 @@
+rook c 6
+king c 5
+knight d 5
+pawn f 5

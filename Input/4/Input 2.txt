@@ -1,0 +1,4 @@
+bishop c 5
+bishop e 5
+rook c 4
+rook d 6
